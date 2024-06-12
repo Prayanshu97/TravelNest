@@ -111,8 +111,8 @@ body{
 
 /* MAP */
 #map{  
-    height: 400px;
-    width: 80vh;
+    height: 60vh;
+    width: 110vh;
 }
 
 /* RATING */
@@ -125,8 +125,8 @@ body{
         display: none !important;
     }
     #map{
-        height: 40vh;
-        width: 40vh;
+        height: 30vh;
+        width: 35vh;
     }
     .starability-result{
         display: none !important;
@@ -138,6 +138,12 @@ body{
 @media (max-width: 576px) {
     #map{
         height: 25vh;
-        width: 25vh;
+        width: 30vh;
+    }
+}
+@media (max-width: 1025px) {
+    #map{
+        height: 45vh;
+        width: 60vh;
     }
 }
