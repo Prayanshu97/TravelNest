@@ -66,10 +66,10 @@
                 <% for(review of listing.reviews){ %>
                     <div class="card col-5 ms-3 mb-3 mt-2 p-3">
                         <div class="card-body">
-                            <h5 class="card-title">@<%= review.author.username %></h5>
+                            <h6 class="card-title" style="font-weight: 700;">@<%= review.author.username %></h6>
                             <p class="starability-result card-text" data-rating="<%= review.rating %>"></p>
                             <div class="rating_mobile"><%= review.rating %> &nbsp; <img src="/star.png" alt=""  style="margin-bottom: 5px; margin-left: -5px;"></div>
-                            <div class="card-text"><%= review.comment %></div>
+                            <div class="card-text" style="display: flex;"><%= review.comment %></div>
                         </div>
                         <% if(currUser){ %>
                         <form action="/listings/<%= listing._id %>/reviews/<%= review._id %>?_method=DELETE" method="POST" class="mt-2">
