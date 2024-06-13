@@ -2,7 +2,7 @@
 <div class="row mt-3">
     <div class="col-8 offset-2">
         <h3>Create a New Listing</h3>
-        <form action="/listings" method="POST" novalidate class="needs-validation" enctype="multipart/form-data">
+        <form action="/listings" method="POST" enctype="multipart/form-data">
             <div class="mb-3">
                 <label for="title" class="form-label">Title</label>
                 <input name="listing[title]" placeholder="Enter title" type="text" class="form-control" required>
@@ -34,8 +34,8 @@
                 </div>
             </div>
             <div class="mb-3">
-                <label for="location" class="form-label">Location</label>
-                <input name="listing[location]" placeholder="Enter location" type="text" class="form-control"
+                <label for="location" class="form-label">City</label>
+                <input name="listing[location]" placeholder="Enter city" type="text" class="form-control"
                     required>
                 <div class="invalid-feedback">Enter valid location</div>
             </div>
